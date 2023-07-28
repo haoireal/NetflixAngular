@@ -1,0 +1,48 @@
+body {
+    background: #eee
+}
+
+#comment .date {
+    font-size: 11px
+}
+
+#comment .comment-text {
+    font-size: 12px
+}
+
+#comment .fs-12 {
+    font-size: 12px
+}
+
+#comment .shadow-none {
+    box-shadow: none
+}
+
+#comment .name {
+    color: #bf000a;
+}
+
+#comment .cursor:hover {
+    color: #bf000a;
+}
+
+#comment .cursor {
+    cursor: pointer
+}
+
+#comment .textarea {
+    resize: none
+}
+#comment button {
+    background-color: #bf000a;
+    color:rgb(255, 255, 255);
+}
+#comment button:hover {
+    background-color: #bf000a96;
+    color:rgba(255, 255, 255, 0.842);
+}
+#comment{
+    width: 100%;
+    background: #343a40!important;
+}
+

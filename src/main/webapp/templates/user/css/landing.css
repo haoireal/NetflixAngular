@@ -1,0 +1,448 @@
+body{
+    background-color: #141414;
+    overflow-x: hidden;
+    width: 100vw;
+    /* position: relative; */
+}
+
+.netflix-padding-left{
+    padding-left: 57px;
+}
+
+
+.netflix-padding-right{
+    padding-right: 57px;
+}
+
+.netflix-navbar{
+    /* background-color: #0C0C0C !important; */
+    z-index: 1000;
+    transition: background 0.2s linear;
+    position: fixed;
+    width: 100vw;
+}
+
+.navbar-brand img{
+     width: 100px;
+}
+
+.netflix-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+}
+.netflix-row .left{
+    width: max-content
+}
+.netflix-row .right{
+    width: max-content
+}
+
+.netflix-dropdown-box{
+    display: none;
+}
+
+.netflix-dropdown{
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    font-size: 9px !important;
+}
+
+.netflix-dropdown-box .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.784);
+    font-size: 9px !important;
+    color: #fff !important;
+    margin-left: -80px;
+    border-top: 3px solid #fff;
+    margin-top: 30px;
+}
+
+.netflix-dropdown-box .dropdown-menu .dropdown-item{
+     color: rgba(255, 255, 255, 0.646);
+     text-align: center;
+     width: 250px;
+     font-size: 15px;
+     padding: 10px 20px;
+}
+
+.netflix-dropdown-box .dropdown-menu .dropdown-item:hover{
+    background-color: rgba(255, 255, 255, 0.133);
+    color: #fff;
+}
+
+i{
+    font-size: 20px;
+    color: #fff;
+    padding: 5px 20px;
+}
+
+.netflix-profile{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.netflix-nav{
+    display: block ;
+    align-items: center;
+}
+
+.dropdown {
+	position: relative;
+}
+.netflix-profile {
+	position: relative;
+}
+.dropdown-menu{
+	position: absolute;
+	left: -4rem;
+	z-index: 50;
+	
+}
+.dropdown-menu a{
+	color: rgb(249, 14, 14, 0.900) !important;
+}
+.netflix-nav button{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.623);
+    border: none;
+    font-size: 13px;
+}
+
+.netflix-nav button:hover{
+    color: #fff;
+}
+
+
+.netflix-home-video{
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    
+}
+
+.netflix-home-video .top{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.netflix-home-video .bottom{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #141414);
+}
+.netflix-home-video video{
+    width: 100%;
+    height: 100%;
+}
+
+
+.netflix-home-video .content{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    /* background-color: #fff; */
+    z-index: 100;
+    display: flex;
+}
+
+.netflix-home-video .content .left{
+    margin-left: 80px;
+}
+.netflix-home-video .content .left img{
+   margin-top: 190px;
+   
+}
+.netflix-home-video .content .right{
+    width: 50%;
+}
+
+.hover-buttons .btn,
+.hover-buttons-info .btn{
+    padding: 5px 15px;
+    font-size: 12px;
+}
+
+.hover-buttons-info .btn-hover{
+    background: #aeafb1!important;
+    border: 1px solid #aeafb1!important;
+    color: #fff;
+    transition:color 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    position: relative;
+    border-radius: 5px;
+
+}
+.btn-hover{
+    background: #bf000a;
+    border: 1px solid #bf000a;
+    color: #fff;
+    transition:color 0.3s ease;
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    position: relative;
+    border-radius: 5px;
+
+}
+.hover-buttons-info .btn-hover::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #6c757d!important;
+    border: 1px solid #6c757d!important;
+    transform: scaleX(1);
+    transform-origin: 50%;
+    transition: transform 0.3s ease-out;
+
+}
+
+.btn-hover::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #e50914;
+    border: 1px solid #e50914;
+    transform: scaleX(1);
+    transform-origin: 50%;
+    transition: transform 0.3s ease-out;
+
+}
+.btn-hover:hover, .btn-hover:focus, .btn-hover:active{
+    color: #fff;
+}
+.btn-hover:focus{
+    box-shadow: none !important;
+}
+
+.btn-hover:hover::before, .btn-hover:focus::before, .btn-hover:active::before{
+    transform: scaleX(0);
+}
+
+.slider{
+    position: absolute;
+    top: 600px ;
+    z-index: 500;
+    /* margin-left: 80px; */
+}
+
+
+
+.slider2{
+    position: absolute;
+    top: 800px ;
+    z-index: 500;
+}
+
+.slider3{
+    position: absolute;
+    top: 1000px ;
+    z-index: 500;
+}
+
+#thumnail{
+	position: relative;
+	width: 236px !important;
+	height: 349px !important;
+	
+}
+#thumnail > img{
+	width: 236px !important;
+	height: 349px !important;
+}
+#thumnail > .title-thumnail{
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #141414);
+	color:white;
+	position: absolute;
+	bottom:0;
+	height: 1.7rem;
+	width:100%;
+	margin-bottom: 0rem !important;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+.card{
+    width: 250px !important;
+    background-color: #141414;
+    border-radius: 4px;
+    transition: 0.2s linear;
+    position: relative;
+}
+
+
+.card:hover{
+    transform: scaleX(1.1) scaleY(1.1);
+    z-index: 10;
+}
+
+
+.card-body{
+    display: none;
+    /* height: 0px; */
+    position: absolute;
+    background-color: #141414;
+    bottom: -114px;
+    left:0;
+    width: 100%;
+}
+
+
+.card-icon{
+    color: #fff;
+    padding: 0px !important;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#card-video{
+	background: #373b44;
+	background: -webkit-linear-gradient(to right, #000000, #ffffff);
+	background: linear-gradient(to bottom, #000000, #ffffff);
+}
+
+.card:hover > .card-body{
+    display: block;
+    /* height: max-content !important; */
+}
+
+.carousel-control-prev{
+    display: none;
+}
+
+.carousel-control-next{
+    display: none;
+}
+
+.tab-change-btn{
+    border: none;
+    width: 30px !important;
+}
+
+
+.margin-right{
+    margin-right: 100px;
+}
+
+.netflix-card-text{
+    font-size: 12px ;
+}
+
+.position-slider2{
+    top: 10px !important;
+    position: absolute !important;
+}
+
+.margin-title2{
+    margin-top: 33px;
+}
+
+.position-slider3{
+    top: 10px !important;
+    position: absolute !important;
+}
+
+
+.footer{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+ul{
+    list-style: none;
+    font-size: 15px ;
+    color: rgba(255, 255, 255, 0.367);
+    font-weight: 100;
+}
+
+
+.service-btn{
+    background-color: transparent;
+     margin-left: 30px;
+      color: rgba(255, 255, 255, 0.367);
+      border: 1px solid rgba(255, 255, 255, 0.367);
+      font-size: 15px;
+      font-weight: 100;
+}
+
+.copy-right{
+    font-size: 15px;
+      font-weight: 200;
+      color: rgb(249, 14, 14);
+      margin-left: 28px;
+}
+
+  /* Styling the search box where the 
+            input would be given */
+        nav .searchbar input[type="text"] {
+            border: 0;
+            padding: 0;
+            width: 0px;
+            height: 35px;
+            border-radius: 3px;
+            transition: all 0.3s ease;
+        }
+  
+        /* Styling the search bar icon */
+        nav .searchbar .icon {
+            display: flex;
+            position: absolute;
+            top: 0;
+           left: 0;
+            width: 35px;
+            height: 100%;
+            background: none;
+            border-radius: 3px;
+            color: #fff;
+            transition: all 0.5s 0.3s ease;
+        }
+          
+        nav .searchbar .icon i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+        }
+          
+        nav .searchbar .icon.active {
+            background: #062333;
+            transition: all 0.3s ease;
+        }
+          
+        nav .searchbar input[type="text"].active {
+            width: 250px;
+            padding: 0 10px;
+            transition: all 0.5s 0.2s ease;
+        }
+          
+        nav .licon li {
+            list-style: none;
+            display: flex;
+        }
+          
+        nav .licon li a {
+            padding: 0 20px;
+        }
